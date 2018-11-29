@@ -1,0 +1,177 @@
+/* responsifkan :) */
+
+@media screen and (min-width: 769px) {
+    .main {
+        /* background-color: lightblue; */
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+    }
+
+    * {
+        --text-size-big: 18px;
+        --text-size-medium: 16px;
+        --text-size-small: 14px;
+        --text-size-tiny: 12px;
+        --text-size-h1: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        /* background-color: #484B9F; */
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .daftar-mobile {
+        position: relative;
+        top: 20%;
+    }
+
+    .header {
+        height: 60vh;
+    }
+
+    .header__tittle {
+        width: 60%;
+        margin-right: 5%;
+    }
+
+    .header__tittle p {
+        font-size: var(--text-size-small);
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .promo__tittle p {
+        display: none;
+    }
+
+
+    .bsatu {
+        display: none;
+    }
+
+    .banner__item {
+        width: 50%;
+    }
+
+    .bdua {
+        margin-left: 0;
+    }
+
+    * {
+        --text-size-big: 16px;
+        --text-size-medium: 14px;
+        --text-size-small: 12px;
+        --text-size-tiny: 10px;
+        --text-size-h1: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 426px) {
+    .main {
+        /* background-color: red; */
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .daftar-mobile {
+        position: relative;
+        top: 10%;
+    }
+
+    .header {
+        height: 40vh;
+    }
+
+    .header__tittle {
+        width: 60%;
+        margin-right: 5%;
+    }
+
+    .header__tittle p {
+        font-size: var(--text-size-medium);
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .promo__tittle p {
+        display: none;
+    }
+
+    .bsatu,
+    .bdua {
+        display: none;
+    }
+
+    .banner__item {
+        width: 100%;
+    }
+
+    .btiga {
+        margin-left: 0;
+    }
+
+    .partner {
+        display: block;
+    }
+
+    .partner__logo {
+        width: 100%;
+    }
+
+    .moto {
+        height: 70vh;
+    }
+
+    .moto__teks p {
+        margin-top: 50%;
+        text-align: center;
+        width: 235%;
+        margin-left: 15%;
+    }
+
+    .partner__teks {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    * {
+        --text-size-big: 14px;
+        --text-size-medium: 12px;
+        --text-size-small: 10px;
+        --text-size-tiny: 8px;
+        --text-size-h1: 20px;
+    }
+}

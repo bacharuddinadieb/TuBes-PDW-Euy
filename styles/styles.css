@@ -1,0 +1,340 @@
+/* pengaturan css global */
+/* latin */
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli Regular'), local('Muli-Regular'), url('../fonts/Muli-Regular.ttf') format('ttf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Muli;
+    --text-size-big: 18px;
+    --text-size-medium: 16px;
+    --text-size-small: 14px;
+    --text-size-tiny: 12px;
+    --text-size-h1: 50px;
+}
+
+p {
+    font-size: var(--text-size-medium);
+}
+
+h1 {
+    font-size: var(--text-size-h1);
+}
+
+body {
+    width: 100%;
+}
+
+.wrapper {
+    height: 100vh;
+    padding-top: 3%;
+}
+
+.main {
+    position: relative;
+    z-index: 3;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* pengaturan css navigasi */
+.nav-desktop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh 5%;
+    box-shadow: 0 4px 7px #00000030;
+}
+
+.nav-logo {
+    width: 30%;
+    max-width: 310px;
+}
+
+.nav-kanan {
+    width: 70%;
+}
+
+.nav-user,
+.nav-menu,
+.nav-menu__element {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.masuk,
+.daftar {
+    margin-left: 2%;
+    padding: 1% 25px;
+    border-radius: 200px;
+    background-color: blue;
+    font-size: var(--text-size-big);
+}
+
+.masuk {
+    background-color: #EAEAEA;
+    color: #5985C4;
+}
+
+.daftar {
+    color: #fff;
+    background: linear-gradient(340deg, #484B9F, #5985C4);
+}
+
+.masuk-img {
+    width: 30px;
+}
+
+.nav-menu {
+    margin-top: 1%;
+}
+
+.nav-menu__element {
+    margin-left: 3%;
+}
+
+.nav-menu__element>p {
+    margin-left: 5px;
+    font-size: var(--text-size-medium);
+}
+
+.nav-menu__element>img {
+    width: 21px;
+}
+
+.nav-mobile {
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    padding: 3vh 3%;
+    box-shadow: 0 4px 7px #00000030;
+}
+
+.nav-logo-mobile {
+    width: 35%;
+    margin: 0 22%;
+}
+
+.nav-user-mobile {
+    width: 10%;
+}
+
+.daftar-mobile {
+    background-color: #5985C4;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+}
+
+.burger-container {
+    width: 10%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.burger {
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    background-color: #484B9F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 200ms;
+}
+
+.line:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 100%;
+    background-color: #484B9F;
+    transition: all 300ms;
+}
+
+.line:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 100%;
+    background-color: #484B9F;
+    transition: all 300ms;
+}
+
+.burger.active #one {
+    background-color: transparent;
+}
+
+.burger.active #one:before {
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.burger.active #one:after {
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+/* div bagian footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: initial;
+    background-color: #5985C420;
+    padding: 3vh 0;
+    margin-top: 5%;
+}
+
+.footer__logo {
+    padding: 0 3% 0 5%;
+    width: 35%;
+}
+
+.logo__social {
+    max-width: 150px;
+    margin-top: 3vh;
+}
+
+.social__wrapper {
+    display: flex;
+    height: 6vh;
+}
+
+.social__wrapper img {
+    width: 20%;
+    margin-left: 7%;
+}
+
+.social__wrapper img:first-child {
+    margin-left: 0;
+}
+
+.footer__produk {
+    width: 12%;
+
+}
+
+.footer__dukungan {
+    width: 18%;
+}
+
+.footer__berlangganan {
+    padding: 0 5% 0 0;
+    width: 35%;
+}
+
+.footer-tittle-text {
+    margin-bottom: 1vh;
+}
+
+.berlangganan__input {
+    display: flex;
+    height: 30px;
+    margin-top: 3%;
+}
+
+.berlangganan__input input {
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: var(--text-size-medium);
+    background-color: #5985C400;
+    width: 90%;
+}
+
+.berlangganan-image {
+    width: 28px;
+    margin-right: 2%;
+}
+
+/* div bagian great footer */
+
+.great-footer {
+    height: initial;
+    background-color: #5985C4;
+    color: #fff;
+    text-align: center;
+    padding: .5%;
+}
+
+/* div bagian sidenav (cuma muncul ketika burger dipenjet) */
+.sidenav {
+    width: 250px;
+    height: 110vh;
+    padding: 60px 32px;
+    position: fixed;
+    background-color: aqua;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow-x: hidden;
+    transform: translate(-250px);
+}
+
+.sidenav-active {
+    transform: translate(0px);
+}
+
+.burger-active {
+    transform: translate(-70px);
+}
+
+.main-active {
+    transform: translate(250px);
+}
+
+.penggaris {
+    height: 1px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #484B9F;
+}
+
+.sidenav a {
+    display: block;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+.overlay {
+    background-color: #00000090;
+    visibility: hidden;
+    height: 110vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    transform: translate(0px);
+}
+
+.overlay-active {
+    transform: translate(250px);
+    visibility: visible;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}

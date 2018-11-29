@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PulKam.ID</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/landing.css">
+    <link rel="stylesheet" href="./styles/responsive.cssf">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="nav-desktop">
+            <div class="nav-logo">
+                <img src="./images/icon/IconMain.svg" alt="MainIcon" class="iconmain">
+            </div>
+            <div class="nav-kanan">
+                <div class="nav-user">
+                    <div class="masuk">
+                        <p>Masuk</p>
+                    </div>
+                    <div class="daftar">
+                        <p>Daftar</p>
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <div class="nav-menu__element">
+                        <img src="./images/icon/Pesawat.svg" class="masuk-img">
+                        <p>pesawat</p>
+                    </div>
+                    <div class="nav-menu__element">
+                        <img src="./images/icon/Bus.svg" class="masuk-img">
+                        <p>Bus</p>
+                    </div>
+                    <div class="nav-menu__element">
+                        <img src="./images/icon/Kereta.svg" class="masuk-img">
+                        <p>Kereta</p>
+                    </div>
+                    <div class="nav-menu__element">
+                        <img src="./images/icon/Kapal.svg" class="masuk-img">
+                        <p>Kapal</p>
+                    </div>
+                    <div class="nav-menu__element">
+                        <img src="./images/icon/Travel.svg" class="masuk-img">
+                        <p>Travel</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-mobile">
+            <div class="burger-container">
+                <div class="burger" onclick="tombolBurger()">
+                    <div class="line" id="one"></div>
+                </div>
+            </div>
+            <div class="nav-logo-mobile">
+                <img src="./images/icon/IconMain.svg" alt="MainIcon" class="iconmain">
+            </div>
+            <div class="nav-user-mobile">
+                <div class="daftar-mobile">
+                    <img src="./images/icon/Login.svg" alt="MainIcon" class="iconmain">
+
+                </div>
+            </div>
+        </nav>
+        <div class="wrapper header">
+            <div class="header__tittle">
+                <h1>Ayo Pulkam</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iusto illo aliquid quibusdam aperiam
+                    cum corporis vero nesciunt consequatur, magni ducimus eius nulla ad molestiae officiis, ab
+                    perspiciatis dolorum! Placeat.</p>
+            </div>
+            <div class="header__search">
+                <div class="search__tab">
+                    <div class="tab__element tab__selected">
+                        <img src="./images/icon/Pesawat.svg" class="masuk-img">
+                        <p>pesawat</p>
+                    </div>
+                    <div class="tab__element">
+                        <img src="./images/icon/Bus.svg" class="masuk-img">
+                        <p>Bus</p>
+                    </div>
+                    <div class="tab__element">
+                        <img src="./images/icon/Kereta.svg" class="masuk-img">
+                        <p>Kereta</p>
+                    </div>
+                    <div class="tab__element">
+                        <img src="./images/icon/Kapal.svg" class="masuk-img">
+                        <p>Kapal</p>
+                    </div>
+                    <div class="tab__element">
+                        <img src="./images/icon/Travel.svg" class="masuk-img">
+                        <p>Travel</p>
+                    </div>
+                </div>
+                <div class="search__content">
+                    <div class="content__destination">
+                        <div class="destination__tujuan">
+                            <img src="./images/icon/Tujuan.svg" class="destination-image">
+                            <div class="tujuan__textwrapper">
+                                <p>Dari</p>
+                                <input type="text" value="Jakarta (JKTC)">
+                            </div>
+                        </div>
+                        <div class="destination__switch">
+                            <img src="./images/icon/Switch.svg" alt="">
+                        </div>
+                        <div class="destination__tujuan">
+                            <img src="./images/icon/Dari.svg" class="destination-image">
+                            <div class="tujuan__textwrapper">
+                                <p>Ke</p>
+                                <input type="text" value="Surabaya (SUB)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__destination">
+                        <div class="destination__tujuan tujuan-kedua">
+                            <img src="./images/icon/Pergi.svg" class="destination-image">
+                            <div class="tujuan__textwrapper">
+                                <p>Pergi</p>
+                                <input type="text" value="Sab, 15 Des 2018">
+                            </div>
+                        </div>
+                        <div class="destination__tujuan tujuan-kedua">
+                            <img src="./images/icon/Pulang.svg" class="destination-image">
+                            <div class="tujuan__textwrapper">
+                                <p>Pulang</p>
+                                <input type="text" value="Min, 27 Jan 2019">
+                            </div>
+                        </div>
+                        <div class="destination__tujuan tujuan-kelas-penumpang">
+                            <img src="./images/icon/Jumlah.svg" class="destination-image">
+                            <div class="tujuan__textwrapper">
+                                <p>Penumpang</p>
+                                <input type="text" value="3 Dewasa">
+                            </div>
+                        </div>
+                        <div class="destination__tujuan tujuan-jumlah-penumpang">
+                            <img src="./images/icon/Kelas.svg" class="destination-image">
+                            <div class="tujuan__textwrapper">
+                                <p>Kelas Kabin</p>
+                                <input type="text" value="Bisnis">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="content__button">Cari Penerbangan</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="promo__tittle">
+                <h1>Promo Ayo Pulkam</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis possimus itaque consequatur
+                    maxime omnis officia deserunt sequi? Nam, officia ab! Praesentium iure deserunt veniam eos labore
+                    ut qui tempore.</p>
+            </div>
+            <div class="promo__banner">
+                <div class="promo__banner-wrapper">
+                    <div class="banner__item bsatu"></div>
+                    <div class="banner__item bdua"></div>
+                    <div class="banner__item btiga"></div>
+                </div>
+                <div class="promo__banner-wrapper">
+                    <div class="banner__item bsatu"></div>
+                    <div class="banner__item bdua"></div>
+                    <div class="banner__item btiga"></div>
+                </div>
+                <div class="promo__banner-wrapper">
+                    <button class="content__button promo-button">Selengkepnya</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper partner">
+            <div class="partner__logo">
+                <img src="./images/background/BGPartner.png">
+            </div>
+            <div class="partner__teks">
+                <h1>Partner Pulkam</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque commodi eligendi qui
+                    laborum veniam libero iste sed illo culpa harum blanditiis nam quas id quis itaque quidem tempora
+                    numquam!</p>
+            </div>
+        </div>
+        <div class="wrapper moto">
+            <div class="moto__teks">
+                <h1>Pulkam Dulu Bayar Kemudian</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque commodi eligendi qui
+                    laborum veniam libero iste sed illo culpa harum blanditiis nam quas id quis itaque quidem tempora
+                    numquam!</p>
+            </div>
+        </div>
+        <div class="wrapper footer">
+            <div class="footer__logo">
+                <img src="./images/icon/IconMain.svg" alt="MainIcon" class="iconmain">
+                <div class="logo__social">
+                    <h3 class="footer-tittle-text">Follow Us</h3>
+                    <div class="social__wrapper">
+                        <img src="./images/icon/Facebook.svg">
+                        <img src="./images/icon/Instagram.svg">
+                        <img src="./images/icon/Twitter.svg">
+                        <img src="./images/icon/GPlus.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__produk">
+                <h3 class="footer-tittle-text">Produk</h3>
+                <p>Pesawat</p>
+                <p>Bus</p>
+                <p>Kereta Api</p>
+                <p>Kapal</p>
+                <p>Travel</p>
+            </div>
+            <div class="footer__dukungan">
+                <h3 class="footer-tittle-text">Dukungan</h3>
+                <p>FAQ</p>
+                <p>Kebijakan dan Privasi</p>
+                <p>Syarat dan Ketentuan</p>
+            </div>
+            <div class="footer__berlangganan">
+                <h3 class="footer-tittle-text">Berlangganan</h3>
+                <p>Berlangganan sekarang juga untuk mendapatkan penawaran terbaik </p>
+                <div class="berlangganan__input">
+                    <img src="./images/icon/Mail.svg" class="berlangganan-image">
+                    <input type="text" value="Masukkan Email Anda">
+                </div>
+                <button class="content__button">Berlangganan</button>
+            </div>
+        </div>
+        <div class="wrapper great-footer">
+            <h4>© 2018 | Made With 😎 by Kelompok Sangar</h4>
+        </div>
+    </div>
+    <div class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">LogIn / Register</a>
+        <a href="#">Booking</a>
+        <a href="#">Bantuan</a>
+        <a href="#">Kontak Kami</a>
+        <div class="penggaris"></div>
+        <a href="#">Promo</a>
+        <a href="#">Pesawat</a>
+        <a href="#">Kereta Api</a>
+        <a href="#">Bus</a>
+        <a href="#">Travel</a>
+        <a href="#">Kapal</a>
+        <div class="penggaris"></div>
+        <p>© bla bla bla </p>
+    </div>
+    <div class="overlay"></div>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
